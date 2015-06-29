@@ -1,0 +1,22 @@
+---
+- name: "501creative"
+  description: "Site rethemeing, implementing CSS3 standards in design and UI. Expanded mobile features and even added plenty of additional animations and usability interactions."
+  link: "http://501creative.com"
+  frontImage: "creative501.png"
+  classes: "featured"
+
+- name: "Deaconess Foundation"
+  description: "Total conversion of previous site to responsive, mobile-friendly site. I took particular pleasure in ridding the site of sprite-sheets used for transitioning icons and images, replacing them with pure CSS3 solutions."
+  link: "http://deaconess.org"
+  frontImage: "deaconess.png"
+
+- name: "Vox Christi"
+  description: "My first site, Vox Christi was a small journal a few of my college classmates and I ran for awhile. We published the works of seminarians from Kenrick-Glennon Seminary, featuring their work both from within and outside the classroom. Each issue was pretty diverse with essays, homilies, poetry, drawings, and pertinent rants."
+  link: "http://voxchristi.com"
+  frontImage: "voxchristi.png"
+
+- name: "St. Louis Graduates"
+  description: "Full revamp of the site to make it completely responsive and updating animations with clean CSS techniques"
+  link: "http://stlouisgraduates.org/"
+  frontImageMobile: "stlouisgraduates-mobile.png"
+  frontImage: "stlgraduates.png"

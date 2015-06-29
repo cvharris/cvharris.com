@@ -1,23 +1,40 @@
 ---
 layout: default
+title: CV Harris
+icon: fa-beer
+description: St. Louis based Web Developer
+background: /assets/FullSizeRender.jpeg
+classes: home
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+  <div class="floating-icons-container">
+    {% for skill in site.data.skills %}
+      <div class="floating-icon">
+        <img src="/assets/{{skill.img}}" />
+      </div>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </div>
+  
+  <article id="hire">
+    <h1 class="hire-title">Why you would want to hire a contractor for web development:</h1>
+    <ul>
+      <li class="marketing">It's like hiring your own marketing consultant</li>
+      <li class="efficient">A single developer works efficiently using the best tools</li>
+      <li class="loose">Just you and your developer. No sales rep or IT recruiter</li>
+      <li class="code">You can do anything you want, there are no rules</li>
+    </ul>
+<!--     <label>
+      Want to ask for a quote?
+    </label>
+    <div>
+      <p class="more-information">Great! Tell me a little more about your idea for a website:</p>
+      <textarea class="form-control" name="moreInfo" rows="3" ng-model="description"></textarea>
+      <input type="email" ng-model="mail_address" name="mailTo" class="form-control" placeholder="Enter your e-mail address...">
+      <button id="submit-inquiry" class="btn" ng-show="(questionaire.mailTo.$valid && questionaire.mailTo.$viewValue != undefined)" ng-click="submitInquiry(questionaire)">Send Inquiry</button>
+      <p>Or you can <a href="#/contact">contact me</a> some other way to share your idea with me.</p>
+    </div> -->  
+  </article>
 
 </div>

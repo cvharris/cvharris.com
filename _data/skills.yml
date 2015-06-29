@@ -1,0 +1,68 @@
+---
+- name: "Drupal"
+  description: "PHP CMS for the data-grinding and custom coded develper"
+  img: "drupal.svg"
+
+- name: "Wordpress"
+  description: "PHP CMS for the quick-and-easy brochure sites and blogs"
+  img: "wordpress.png"
+
+- name: "Angular"
+  description: "Javascript MVC for powerful web application development"
+  img: "angular.png"
+
+- name: "HTML5"
+  description: "The definitive web markup-language. The '5' is for its latest capabilites and elements"
+  img: "html5.png"
+
+- name: "CSS3"
+  description: "The flesh and makeup for the web. The '3' is for the latest modern-browser capabilites"
+  img: "css3.svg"
+
+- name: "Javascript"
+  description: "The muscle and nerves of any website and the best programming language for web development"
+  img: "javascript.svg"
+
+- name: "PHP"
+  description: "A server-side language useful for getting data to websites out of databases"
+  img: "php.png"
+
+- name: "jQuery" 
+  description: "Most popular Javascript library to manipulate and animate web pages"
+  img: "jquery.png"
+
+- name: "LESS"
+  description: "Write better CSS quicker with LESS, my preferred CSS pre-processor"
+  img: "less.png"
+
+- name: Grunt
+  description: "Command line project manager for quick and powerful web development"
+  img: "grunt.svg"
+
+- name: "Git"
+  description: "Popular command line version control for collaboration and loss prevention"
+  img: "git.png"
+
+- name: "Bower"
+  description: "A popular package manager for web development stacks, easily integrated with any NodeJS project"
+  img: "bower.png"
+
+- name: "Apache"
+  description: "The easiest and standard web-hosting server, best for just about any website"
+  img: "apache.png"
+
+- name: "NodeJS"
+  description: "The most popular Javascript server-side tool, best for running web applications"
+  img: "nodejs.png"
+
+- name: "MySQL"
+  description: "The most popular database language for storing data secure and intuitive to retrieve"
+  img: "mysql.svg"
+
+- name: "CouchDB"
+  description: "The most popular database language for storing data secure and intuitive to retrieve"
+  img: "couchdb.png"
+
+- name: "Firebase"
+  description: "A NoSQL database which opens web sockets for real-time updates and data transfers" 
+  img: "firebase.png"

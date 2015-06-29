@@ -1,0 +1,43 @@
+---
+layout: post
+title: I Used to Believe in the Power of Print
+date: '2015-01-20 12:40:04'
+---
+
+<div style="text-align:center"><i>Immutable, the printed word was superior to the fickle Internet post.</i></div><br />
+I used to believe print, by its very essence, was superior to media on the web. You held it, you read it, you sensed it, you experienced it, and you took hold of it. The material reality could not be replaced by nonmaterial illuminations. What was printed onto paper became one with Time while what was loosed on the Internet was subject to forgotten space. The very binding of the book formed and framed the text. The content was in some cases one with the book's artistic and intentionality-filled trappings. The smell of dust and time from a dated tome meant you were reading a part of history <i>per se</i>, simply because the <i>medium</i> determined it.
+<br /><br />
+As part of an assignment in college we read the famous article, <a href="http://web.mit.edu/allanmc/www/mcluhan.mediummessage.pdf" target="_blank">"The Medium is the Message"</a>, an influential article of sorts which I read and, at the time, I ridiculed the way the 'content' of a work was so much conflated with the 'medium' it is delivered in. As the Thomistic axiom goes: "Knowing is in the mode of the receiver," or in other words: <strong><i>how one receives an idea directly influences how they understand it</i></strong>. You'll find it difficult to receive something if the medium is poor, though the diligent might yet understand the idea.
+<br /><br />
+I at first read the article and believed print was still the most meaningful medium simply because it required more effort and therefore more intentionality. What I came to realize years after my initial struggle with the article was:
+<br /><br />
+<div style="text-align: center"><i>...just because digital content isn't on paper doesn't mean it's any less tangible.</i></div>
+<br />What I really realized was any medium is vulnerable and can be used as click-bait or self-helps if marketing them so means profit. The enchantments of the physical world are are at the disposal of perfunctory digitizations, and the magic they once wrought fell long ago to capitalism's consumption. Barnes & Noble would like me to buy Hillary Clinton's book written mostly by someone other dude, and I leave trying to figure out how they hell certain titles make it into their Philosophy section. <i>Print did not necessitate good content</i> and was just as prone to the mass-production margins and publishing budgets. The new 'fancy' doodles on bindings mocked the hand-drawings and gold-leafing of a past century's book manufacturing. Print was not to be left out in the digital age, and it lost its primacy and power in doing so.
+
+But, as I found, the Web can become a beautiful new home for good content.<br />
+
+<br /><div style="clear: both;">
+<figure style="float: right; margin-left: 15px; max-height: 400px;
+max-width: 250px;"><img src="/content/images/2015/01/me_vox_christi.png" height="300" width="250" style="max-width: 100%; margin: 0 auto" />
+<figcaption style="font-style: italic; text-align: center; font-size: 80%;">Me in my haughty pride of print</figcaption>
+</figure>
+<h3>Storytime</h3>
+<br /><div style="text-align: center;"><i>Founding a quarterly journal in college led me to become a web developer</i></div></div>
+<br /><a href="http://voxchristi.com" target="_blank"><p style="clear:both;">Vox Christi</a> was a quarterly journal that I founded with two friends in college, and by college I mean the interesting, unique, and strange world that was <a href="http://kenrick.edu" target="_blank">Kenrick-Glennon Seminary</a>. It is a Catholic seminary, a school for men to study to become priests, but in the 6<sup>1</sup>/<sub>2</sub> years I spent there it was that and more: a community of smart, innovating, talented, and faithful young men.</p>
+
+The community at Kenrick-Glennon was very inspiring to me. Every man had a unique story which brought him to the school and some of the most insightful things I've ever heard and read came from my friends and colleagues there. Thus, in the graduate program, I spoke up about the idea to publish the best of these works for others to gain access to and enjoy as well.
+
+We settled on a quarterly journal because, well, Catholic seminarians use that as their content <i>mode</i> more often than the Web or video. So used to holding dusty tomes from the basement floors of our library we felt like the audience&mdash;which we had not yet formed&mdash;ought to read us in our medium of choice: print. The content alone would drive interest and bring us feedback and development along the way, all we needed to do was become official. So we registered for an ISSN, won the backing of our faculty and administration, solicited advice from various other heads of publishing around the St. Louis area, and launched our first issue to an audience of 100 subscribers in December of 2011.
+
+But by January of 2014 <i>Vox Christi</i> had run its course. I left the seminary in November of 2012, and one of the other co-founders had by then stepped out. One of us was left to develop the journal into a lasting activity at the seminary, with regular handing-on of power and a routine cycle of content. Though the content and support was there, the effort was misguided, ultimately, I argue, because we published primarily in print.
+
+<div style="text-align: center"><i>Vox Christi failed because we were dead set on print.</i></div>
+<br />There were a lot of factors as to why <i>Vox Christi</i> failed but yes, indeed, the largest one was due to print. We had a good idea, good support, and good content. The problem was the effort to put that content onto print and distribute it killed our efforts to share our content and form an audience. <i>We knew if we could just get to our target demographics we would form a stable readership, <strong>but we never reached them because print takes too much damn effort on your own</strong></i>. We controlled the whole process, from editing, design, and shipping, everything except the actual printing. We decided on what we liked and what we decided was the <i>form</i> of our content. Yet we puttered out in spite of our efforts because we set the task before us to be too great.
+<hr />
+In the end it was actually the <a href="http://voxchristi.com" target="_blank">website</a> I built for <i>Vox Christi</i>, my first website I ever built on my own, which survived and continued to enchant the dreams I had for writing good content. I set it up simply to take online orders and help students administrate shipping and online access. I hoped that it would be the best tool for students to use, but then I turned it into an experiment&mdash;a proving ground&mdash;that <i>Web could deliver my content better than print ever could</i>.
+
+<i>Vox Christi's</i> website was not given a 'slap-on' template that someone else built, <i>I</i> designed it myself, intentionally copying the same design concept we used in our print journal. Black and white was not only a cheaper print solution but it was also the standard dress of the priest in his collar, so I stretched that black-and-white look to a web design which I felt was appropriate. I learned much about my lack of design skills, and very quickly too, but what I really learned was how much the Web was fastly becoming a tool separated from print with its own developing form to deliver content.
+
+The work I did for <i>Vox Christi's</i> website caught the attention of web developer friends who recommended I make a career change, and so I left high school teaching to start as a web developer at a small marketing firm. From there I learned the tools of the trade and practicing good code. The HTML and CSS, though just the icing on the cake for some of my projects, brought me to unlock the potential power of a blog I could start. Armed with tools I had never used before, I chose to start this website and begin writing without relying on print. <i>The Web had won me over and enchanted my imagination.</i>
+
+As sites like <a href="http://medium.com" target="_blank">Medium</a> can demonstrate, the Web is not full of just shoddy Wordpress blogs and flashing ads. Sifting through the sites like sifting through the shelves of a Barnes & Noble, <strong><i>one can pick out the content delivered in any medium thoughtfully and artistically weilded</i></strong>. Print is not in itself better than the Web for content for that reason: both can be beautiful drivers of content. What we have even seen so far is that new content, never before seen in writing, is cropping up on the Web and in well-articulated forms. 
