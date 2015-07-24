@@ -4,7 +4,7 @@ email: cvharris1014@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   In addition to working full-time, I enjoy doing web development
   on the side for projects I am interested in. If you are looking
-  for a web developer for your project, let me know about it!	 
+  for a web developer for your project, let me know about it!
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://cvharris.com" # the base hostname & protocol for your site
 twitter_username: chesterbelloc14
