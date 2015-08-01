@@ -4,8 +4,8 @@ title: Portfolio
 permalink: /portfolio/
 order: 1
 icon: fa-archive
-description: Various websites I've developed and/or currently maintain 
-classes: normal
+description: Various websites I've developed and/or currently maintain
+classes: normal portfolio
 ---
 
 <div class="projects-container">

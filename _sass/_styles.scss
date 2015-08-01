@@ -95,6 +95,7 @@ main {
   z-index: 2;
   position: relative;
   width: 100%;
+	overflow: hidden;
 
 	&:before {
     content: '';
@@ -304,12 +305,25 @@ main {
 	    background-color: white;
 	    background-size: auto 100%;
 	    background-position: center;
+			background-color: hsla(0, 0%, 14%, 0.7);
+		  background-blend-mode: overlay;
+		  display: flex;
+		  align-items: flex-end;
 		}
 		.back {
 	    transform: rotateY(180deg);
 	    background-color: white;
 	    background-image: none;
 		}
+
+		.project-name {
+			font-size: 27px;
+			margin: 0;
+			color: white;
+			padding-left: 10px;
+			padding-bottom: 5px;
+		}
+
 	}
 
 	&:hover .project-card {
@@ -368,6 +382,52 @@ main {
 		}
 		&:not(:first-child) {
 			margin-left: 0;
+		}
+	}
+}
+
+.profile {
+	margin-top: 50px;
+
+	.description {
+		text-align: center;
+		margin: 30px 18%;
+		font-size: 20px;
+	}
+}
+
+.profile-container {
+	height: 120px;
+	width: 120px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin: auto;
+	box-shadow: 0.05em .1em 0 2px hsla(0, 0%, 90%, 0.8);
+
+	img {
+	    object-fit: cover;
+	}
+}
+
+dl.horizontal {
+	@include flex-display();
+	@include flex-wrap(wrap);
+
+	dt {
+		flex: 0 0 200px;
+
+		i {
+			margin-right: 7px;
+		}
+	}
+
+	dd {
+		&:last-of-type {
+			flex: 1 0 calc(100% - 200px);
+		}
+
+		&:not(:first-of-type) {
+			margin-left: 200px;
 		}
 	}
 }

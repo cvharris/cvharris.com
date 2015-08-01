@@ -20,3 +20,15 @@
   link: "http://stlouisgraduates.org/"
   frontImageMobile: "stlouisgraduates-mobile.png"
   frontImage: "stlgraduates.png"
+
+- name: "Pictabuzz"
+  description: "Advertising site for mobile picture/contacts application, created by 501creative"
+  link: "http://pictabuzz.com"
+
+- name: "St. Cecilia's Parish"
+  description: "Parish website for Catholic church in south St. Louis City, featuring translation into Spanish and English"
+  link: "http://stceciliaparishstl.org"
+
+- name: "St. Elizabeth, Mother of John the Baptist Parish"
+  description: "Parish website for Catholic church in north St. Louis City"
+  link: "http://semojb.com"
