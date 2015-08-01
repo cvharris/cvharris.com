@@ -16,7 +16,9 @@ body {
 	@include flex-direction(column);
 	padding:0;
 	height: calc(100% - 61px);
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 100%;
 }
 
 .writing {
@@ -95,7 +97,6 @@ main {
   z-index: 2;
   position: relative;
   width: 100%;
-	overflow: hidden;
 
 	&:before {
     content: '';
