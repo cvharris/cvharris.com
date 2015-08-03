@@ -18,10 +18,8 @@ classes: normal portfolio
 
 			<div class="back project-details">
 				<h2 class="project-name">{{ project.name }}</h2>
-				<ul>
-					<li>{{ project.description }}</li>
-					<li><a href="{{ project.link }}" target="_blank">Link to {{ project.name }}</a></li>
-				</ul>
+				<div>{{ project.description }}</div>
+				<div><a href="{{ project.link }}" target="_blank">Link to {{ project.name }}</a></div>
 			</div>
 		</div>
 	</div>
