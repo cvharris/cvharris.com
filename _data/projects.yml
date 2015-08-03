@@ -24,11 +24,14 @@
 - name: "Pictabuzz"
   description: "Advertising site for mobile picture/contacts application, created by 501creative"
   link: "http://pictabuzz.com"
+  frontImage: "pictabuzz.png"
 
 - name: "St. Cecilia's Parish"
   description: "Parish website for Catholic church in south St. Louis City, featuring translation into Spanish and English"
   link: "http://stceciliaparishstl.org"
+  frontImage: "stcecilia.png"
 
 - name: "St. Elizabeth, Mother of John the Baptist Parish"
   description: "Parish website for Catholic church in north St. Louis City"
   link: "http://semojb.com"
+  frontImage: "semojb.png"
