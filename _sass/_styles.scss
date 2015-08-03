@@ -19,6 +19,7 @@ body {
 	overflow-y: auto;
 	overflow-x: hidden;
 	width: 100%;
+	-webkit-overflow-scrolling: touch;
 }
 
 .writing {
@@ -31,6 +32,10 @@ body {
 	  @include justify-content(center);
 		@include align-items(center);
 	  margin-top: 30px;
+
+		@include media-query($on-palm) {
+	    margin: 0;
+		}
 	}
 }
 
@@ -53,6 +58,10 @@ body {
   position: fixed;
   width: 100%;
   z-index: 0;
+
+	@include media-query($on-palm) {
+		background-position: bottom 0 center;
+	}
 }
 
 .page-title {
@@ -74,6 +83,16 @@ body {
 	  top: 0;
 	  left: -59pt;
 	}
+
+	@include media-query($on-palm) {
+		font-size: 38pt;
+		text-indent: 0;
+
+		i {
+			position: relative;
+			left: 0;
+		}
+	}
 }
 
 .home .page-title {
@@ -92,6 +111,12 @@ body {
   color: rgba(255,255,255,0.8);
 }
 
+@include media-query($on-palm) {
+	.home .page-description {
+		text-align: center;
+	}
+}
+
 #main {
 	@include flex(1, 0, auto);
   z-index: 2;
@@ -107,6 +132,9 @@ body {
     margin-left: -100%;
     z-index: -1;
     background-color: #fdfdfd;
+	}
+	@include media-query($on-palm) {
+		padding: 0;
 	}
 }
 
@@ -205,6 +233,10 @@ body {
 .footer-box.description {
 	@include flex(1, 0, 40%);
   margin-right: 60px;
+
+	@include media-query($on-palm) {
+    margin-right: 0;
+	}
 }
 
 .footer-box.social {

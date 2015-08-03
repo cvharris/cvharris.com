@@ -23,18 +23,22 @@
 
         {% include footer.html %}
       </div>
-        
+
       <aside>
         <div class="mobile-nav">
-        {% assign sorted_pages = site.pages | sort:'order' %}
-          {% for page in sorted_pages %}
-            {% if page.title and page.title != 'CV Harris' %}
-            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
-              <i class="fa {{page.icon}}"></i>
-              <span>{{ page.title }}</span>
-            </a>
-            {% endif %}
-          {% endfor %}
+          <a class="page-link" href="/">
+            <span>Home</span>
+            <i class="fa fa-beer"></i>
+          </a>
+          {% assign sorted_pages = site.pages | sort:'order' %}
+            {% for page in sorted_pages %}
+              {% if page.title and page.title != 'CV Harris' %}
+              <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+                <span>{{ page.title }}</span>
+                <i class="fa {{page.icon}}"></i>
+              </a>
+              {% endif %}
+            {% endfor %}
         </div>
       </aside>
     </main>

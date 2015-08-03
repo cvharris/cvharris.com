@@ -3,7 +3,7 @@ layout: page
 title: Portfolio
 permalink: /portfolio/
 order: 1
-icon: fa-archive
+icon: fa-briefcase
 description: Various websites I've developed and/or currently maintain
 classes: normal portfolio
 ---
