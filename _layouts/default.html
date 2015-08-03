@@ -7,21 +7,37 @@
 
     {% include header.html %}
 
-    <div class="page-content {{ page.classes }}">
+    <main>
+      <div class="page-content {{ page.classes }}">
 
-      <header class="page-head" {% if page.background %} style="background-image: url({{ page.background }})" {% endif %}>
-        <div class="wrapper">
-          <h1 class="page-title"><i class="fa {{ page.icon }}"></i>{{ page.title }}</h1>
-          <h2 class="page-description">{{ page.description }}</h2>
+        <header class="page-head" {% if page.background %} style="background-image: url({{ page.background }})" {% endif %}>
+          <div class="wrapper">
+            <h1 class="page-title"><i class="fa {{ page.icon }}"></i>{{ page.title }}</h1>
+            <h2 class="page-description">{{ page.description }}</h2>
+          </div>
+        </header>
+
+        <div id="main" class="wrapper">
+          {{ content }}
         </div>
-      </header>
 
-      <main class="wrapper">
-        {{ content }}
-      </main>
-
-      {% include footer.html %}
-    </div>
+        {% include footer.html %}
+      </div>
+        
+      <aside>
+        <div class="mobile-nav">
+        {% assign sorted_pages = site.pages | sort:'order' %}
+          {% for page in sorted_pages %}
+            {% if page.title and page.title != 'CV Harris' %}
+            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+              <i class="fa {{page.icon}}"></i>
+              <span>{{ page.title }}</span>
+            </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </aside>
+    </main>
 
   </body>
 
