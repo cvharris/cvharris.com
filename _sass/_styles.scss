@@ -92,7 +92,7 @@ body {
   color: rgba(255,255,255,0.8);
 }
 
-main {
+#main {
 	@include flex(1, 0, auto);
   z-index: 2;
   position: relative;
@@ -110,7 +110,7 @@ main {
 	}
 }
 
-.home main {
+.home #main {
   padding-top: calc(100vh - 165px);
 }
 
