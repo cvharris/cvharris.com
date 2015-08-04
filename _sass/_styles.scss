@@ -19,7 +19,11 @@ body {
 	overflow-y: auto;
 	overflow-x: hidden;
 	width: 100%;
-	-webkit-overflow-scrolling: touch;
+
+	@include media-query($on-palm) {
+		-webkit-overflow-scrolling: touch;
+		margin-top: 0 !important;
+	}
 }
 
 .writing {
