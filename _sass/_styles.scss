@@ -50,8 +50,7 @@ body {
 }
 
 .home .page-head {
-  padding: 30px 0;
-  height: calc(100vh - 212px);
+  height: calc(100vh - 162px);
   background-position: bottom -15px center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -100,6 +99,7 @@ body {
 	color: $white;
 	border-bottom: none;
 	margin: 0;
+  padding-top: 30px;
 }
 
 .page-description {
@@ -137,7 +137,7 @@ body {
 		padding: 0;
 
 		&:before {
-		    height: 100%;
+		    height: calc(100% - 222px);
 		}
 	}
 }
