@@ -223,7 +223,7 @@ body {
     @extend %clearfix;
 
     @include media-query($on-palm) {
-  	    flex-direction: column;
+  	    @include flex-direction(column);
     }
 }
 
