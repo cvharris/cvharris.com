@@ -19,6 +19,7 @@ body {
 	overflow-y: auto;
 	overflow-x: hidden;
 	width: 100%;
+	background-color: #fdfdfd;
 
 	@include media-query($on-palm) {
 		-webkit-overflow-scrolling: touch;
@@ -83,7 +84,7 @@ body {
 
 	i {
 	  position: absolute;
-	  top: 0;
+	  top: 30px;
 	  left: -59pt;
 	}
 
@@ -93,6 +94,7 @@ body {
 
 		i {
 			position: relative;
+			top: 0;
 			left: 0;
 		}
 	}
@@ -127,16 +129,6 @@ body {
   position: relative;
   width: 100%;
 
-	&:before {
-    content: '';
-    display: block;
-    position: absolute;
-    height: calc(100% - 532px);
-    width: 300%;
-    margin-left: -100%;
-    z-index: -1;
-    background-color: #fdfdfd;
-	}
 	@include media-query($on-palm) {
 		padding: 0;
 
@@ -442,7 +434,7 @@ body {
     position: relative;
     @include flex-display(inline-flex);
     overflow: hidden;
-    padding: 1em 0px 0em 50px;
+    padding: 0em 0px 0em 50px;
 
 		span {
 	    display: inline-block;

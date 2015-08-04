@@ -10,6 +10,12 @@
     position: fixed;
     width: 100%;
     z-index: 9;
+
+    .wrapper {
+      @include flex-display();
+      @include justify-content(space-between);
+      @include align-items(center);
+    }
 }
 
 .site-title {
