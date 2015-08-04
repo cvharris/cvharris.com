@@ -60,7 +60,7 @@ body {
   z-index: 0;
 
 	@include media-query($on-palm) {
-		background-position: bottom 0 center;
+		background-position: top center;
 	}
 }
 
@@ -343,8 +343,8 @@ body {
 	    background-color: white;
 	    background-size: auto 100%;
 	    background-position: center;
-		  display: flex;
-		  align-items: flex-end;
+			@include flex-display();
+		  @include align-items(flex-end);
 			overflow: hidden;
 
 			&:before {
@@ -364,7 +364,7 @@ body {
 			}
 			@include media-query($on-palm) {
 				align-items: flex-start;
-				
+
 				&:before {
 					content: none;
 				}
@@ -500,7 +500,7 @@ dl.horizontal {
 	@include flex-wrap(wrap);
 
 	dt {
-		flex: 0 0 200px;
+		@include flex(0, 0, 200px);
 
 		i {
 			margin-right: 7px;
@@ -509,7 +509,7 @@ dl.horizontal {
 
 	dd {
 		&:last-of-type {
-			flex: 1 0 calc(100% - 200px);
+			@include flex(1, 0, calc(100% - 200px));
 		}
 
 		&:not(:first-of-type) {
@@ -519,14 +519,14 @@ dl.horizontal {
 
 	@include media-query($on-palm) {
     padding: 0 20px;
-    flex-direction: column;
+		@include flex-direction(column);
 
 		dt {
-			flex: 0 0 auto;
+			@include flex(0, 0, auto);
 		}
 
 		dd:last-of-type {
-			flex: 0 0 auto;
+			@include flex(0, 0, auto);
 		}
 
 		dd:not(:first-of-type) {

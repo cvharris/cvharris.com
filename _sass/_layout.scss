@@ -93,8 +93,8 @@ aside {
   transition: all 0.5s;
 
   .mobile-nav {
-    display: flex;
-    flex-direction: column;
+    @include flex-display();
+    @include flex-direction(column);
     padding-top: 7px;
 
     .page-link {
