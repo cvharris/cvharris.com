@@ -372,7 +372,7 @@ body {
 		    transition: box-shadow .3s ease;
 			}
 			@include media-query($on-palm) {
-				align-items: flex-start;
+				@include align-items(flex-start);
 
 				&:before {
 					content: none;
