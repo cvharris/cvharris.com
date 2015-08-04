@@ -349,6 +349,7 @@ body {
 		  background-repeat: no-repeat;
 	    z-index: 2;
 	    /* for firefox 31 */
+	  	-webkit-transform: rotateY(0deg);
 	    transform: rotateY(0deg);
 	    background-color: white;
 	    background-size: auto 100%;
@@ -384,6 +385,7 @@ body {
 			}
 		}
 		.back {
+	  	-webkit-transform: rotateY(180deg);
 	    transform: rotateY(180deg);
 	    background-color: white;
 	    background-image: none;
@@ -422,6 +424,7 @@ body {
 	}
 
 	&.flipped .project-card {
+	  -webkit-transform: rotateY(180deg);
 	  transform: rotateY(180deg);
 	}
 
