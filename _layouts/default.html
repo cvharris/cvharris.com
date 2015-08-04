@@ -8,22 +8,6 @@
     {% include header.html %}
 
     <main>
-      <div class="page-content {{ page.classes }}">
-
-        <header class="page-head" {% if page.background %} style="background-image: url({{ page.background }})" {% endif %}>
-          <div class="wrapper">
-            <h1 class="page-title"><i class="fa {{ page.icon }}"></i>{{ page.title }}</h1>
-            <h2 class="page-description">{{ page.description }}</h2>
-          </div>
-        </header>
-
-        <div id="main" class="wrapper">
-          {{ content }}
-        </div>
-
-        {% include footer.html %}
-      </div>
-
       <aside>
         <div class="mobile-nav">
           <a class="page-link" href="/">
@@ -41,6 +25,23 @@
             {% endfor %}
         </div>
       </aside>
+      
+      <div class="page-content {{ page.classes }}">
+
+        <header class="page-head" {% if page.background %} style="background-image: url({{ page.background }})" {% endif %}>
+          <div class="wrapper">
+            <h1 class="page-title"><i class="fa {{ page.icon }}"></i>{{ page.title }}</h1>
+            <h2 class="page-description">{{ page.description }}</h2>
+          </div>
+        </header>
+
+        <div id="main" class="wrapper">
+          {{ content }}
+        </div>
+
+        {% include footer.html %}
+      </div>
+
     </main>
 
   </body>

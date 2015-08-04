@@ -22,7 +22,6 @@ body {
 
 	@include media-query($on-palm) {
 		-webkit-overflow-scrolling: touch;
-		margin-top: 0 !important;
 	}
 }
 
@@ -236,11 +235,13 @@ body {
 	@include flex-display();
 	@include justify-content(space-between);
 	margin-left: 0;
+	position: relative;
 }
 
 .footer-box.description {
 	@include flex(1, 0, 40%);
   margin-right: 60px;
+	position: relative;
 
 	@include media-query($on-palm) {
     margin-right: 0;
@@ -249,6 +250,7 @@ body {
 
 .footer-box.social {
 	@include flex(0, 0, 40%);
+	position: relative;
 }
 
 .social-media-list {
