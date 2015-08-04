@@ -331,8 +331,6 @@ body {
     width: 100%;
     border-radius: 6px;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
-		// -webkit-transform : translate3d(0, 0, 0);
-		// transform: translate3d(0, 0, 0);
 
 		.front, .back {
 			-webkit-backface-visibility: hidden;
@@ -343,8 +341,11 @@ body {
 	    width: 100%;
 	    height: 250px;
 	    overflow: auto;
-			// -webkit-transform : translate3d(0, 0, 0);
-			// transform: translate3d(0, 0, 0);
+			-webkit-transition: 0.6s;
+			transition: 0.6s;
+			-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+
 		}
 		.front {
 		  background-size: cover;
@@ -387,8 +388,8 @@ body {
 			}
 		}
 		.back {
-	  	-webkit-transform: rotateY(180deg);
-	    transform: rotateY(180deg);
+	  	-webkit-transform: rotateY(-180deg);
+	    transform: rotateY(-180deg);
 	    background-color: white;
 	    background-image: none;
 
