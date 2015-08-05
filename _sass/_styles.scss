@@ -55,13 +55,17 @@ body {
 
 .home .page-head {
   height: calc(100vh - 162px);
-  background-position: bottom -15px center;
+  background-position: bottom 0 center;
   background-size: cover;
   background-repeat: no-repeat;
   position: fixed;
 	top: 0;
   width: 100%;
   z-index: 0;
+
+	@include media-query($on-desktop) {
+		background-position: bottom -15px center;
+	}
 
 	@include media-query($on-palm) {
 		background-position: top center;
@@ -84,8 +88,8 @@ body {
 
 	i {
 	  position: absolute;
-	  top: 30px;
-	  left: -59pt;
+	  top: 0px;
+	  left: -65pt;
 	}
 
 	@include media-query($on-palm) {
@@ -105,7 +109,7 @@ body {
 	color: $white;
 	border-bottom: none;
 	margin: 0;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
 .page-description {
