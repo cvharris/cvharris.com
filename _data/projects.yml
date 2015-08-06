@@ -1,4 +1,9 @@
 ---
+- name: "September to Remember"
+  description: "With the help of <a href='http://mmcbride1007.github.io/'>Mike Mcbride</a> we built and designed the wedding website for our dear friends Bridget and Kevin. We built the site using simple grunt web app, hosted on one of my node servers"
+  link: "http://september2remember.com"
+  frontImage: "bkwed.png"
+
 - name: "St. Elizabeth, Mother of John the Baptist Parish"
   description: "Parish website for Catholic church in north St. Louis City"
   link: "http://semojb.com"
