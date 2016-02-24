@@ -14,4 +14,4 @@ github_username:  cvharris
 markdown: kramdown
 
 # Gem Plugins
-gems: ['jekyll-less']
+gems: []
