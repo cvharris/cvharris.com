@@ -2,14 +2,16 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $red;
-    min-height: 56px;
+    border-top: 5px solid $red-color;
+    height: 56px;
     background-color: $accent-black;
-
+    transform: translate3d(0, 0, 0);
     // Positioning context for the mobile navigation icon
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    z-index: 9;
+    z-index: 11;
 
     .wrapper {
       @include flex-display();
@@ -38,65 +40,69 @@
 }
 
 // Mobile navigation
-main {
+body {
+  position: relative;
   -webkit-perspective: 1500px;
   perspective: 1500px;
   -webkit-perspective-origin: 0% 50%;
-  perspective-origin: 0% 50%;;
-  position: relative;
-  overflow:hidden;
-  height: 100%;
-  background-color: lightgray;
+  perspective-origin: 0% 50%;
+  overflow: auto;
+  z-index: 1;
 
   &:after {
+    content: '';
     position: absolute;
     top: 0;
-    left: -250px;
+    right: 0;
     width: 0;
     height: 0;
     display: block;
     z-index: 9;
-    background: rgba(0,0,0,0.2);
-    content: '';
     opacity: 0;
+    background: rgba($black, .85);
     transform: translate3d(250px, 0, 0);
-    -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
-    transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    transition-duration: 0.5s;
+    transition-property: opacity, width, transform;
+    -webkit-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+   -moz-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+     -o-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+        transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
   }
 }
 
-.page-content {
+main {
   position: relative;
+  overflow:hidden;
   height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 1000px;
+  background-color: $grey-lighter;
   z-index: 8;
+  perspective: 1000px;
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  @include flex-display();
-  @include flex-direction(column);
-
-  @include media-query($on-palm) {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+   -moz-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+     -o-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+        transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
 }
 
 aside {
   position: fixed;
-  top: 55px;
+  top: 61px;
   right: 0;
-  z-index: 1;
+  z-index: 10;
   width: 250px;
-  height: calc(100% - 55px);
-  background-color: #2980b9;
+  height: calc(100vh - 61px);
+  background-color: $blue-primary;
   overflow: hidden;
   visibility: hidden;
   opacity: 1;
   -webkit-transform: translate3d(0, 0, -250px);
-  transform: translate3d(0, 0, -250px);;
-  transition: all 0.5s;
+  transform: translate3d(0, 0, -250px);
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+   -moz-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+     -o-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+        transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
 
   .mobile-nav {
     @include flex-display();
@@ -119,27 +125,32 @@ aside {
 }
 
 body {
-  position: relative;
-  height: 100%;
-  overflow: hidden;
 
   &.sidebar {
+    overflow: hidden;
+
     .site-header {
       transform: translateY(0);
     }
+
     aside {
       visibility: visible;
-      -webkit-transition: -webkit-transform 0.5s;
-      transition: transform 0.5s;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+       -moz-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+         -o-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+            transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
-    .page-content {
+
+    main {
       -webkit-transform: translate3d(-250px, 0, 0);
       transform: translate3d(-250px, 0, 0);
     }
 
-    main:after {
+    &:after {
       width: 100%;
       height: 100%;
       opacity: 1;
@@ -254,7 +265,7 @@ body {
     width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
-@include media-query($on-laptop) {
+@include media-query($on-tablet) {
     .footer-col-1,
     .footer-col-2 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
@@ -280,12 +291,6 @@ body {
 /**
  * Page content
  */
-.page-content {
-    padding: $spacing-unit 0;
-    margin-top: 61px;
-    overflow: hidden;
-}
-
 .page-heading {
     font-size: 20px;
 }
@@ -300,7 +305,7 @@ body {
 }
 
 .post-meta {
-    font-size: $small-font-size;
+    font-size: .8rem;
     color: $grey-color;
 }
 
@@ -323,7 +328,7 @@ body {
     letter-spacing: -1px;
     line-height: 1;
 
-    @include media-query($on-laptop) {
+    @include media-query($on-tablet) {
         font-size: 36px;
     }
 }
@@ -334,7 +339,7 @@ body {
     h2 {
         font-size: 32px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-tablet) {
             font-size: 28px;
         }
     }
@@ -342,7 +347,7 @@ body {
     h3 {
         font-size: 26px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-tablet) {
             font-size: 22px;
         }
     }
@@ -350,7 +355,7 @@ body {
     h4 {
         font-size: 20px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-tablet) {
             font-size: 18px;
         }
     }

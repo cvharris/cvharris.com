@@ -1,41 +1,61 @@
 ---
+- name: "From Habit to Harris"
+  description: "My wedding website!"
+  link: "http://fromhabittoharris.com"
+  frontImage: "fromhabittoharris.png"
+  tags: [wedding, github, gallery, mobile]
+  color: white
+
+- name: "Lindbergh Flyers Lacrosse"
+  description: "Lacrosse team website for Lindbergh High school. Wordpress site featuring calendars for each team as well as consolidating fundraiser and organization-wide events. Also has a registration form integrated with Stripe for processing payments and ordering uniforms/equipment."
+  link: "http://lindberghlax.com"
+  frontImage: "lindlax.png"
+  tags: [sports, wordpress, payments, stripe, analytics, mobile, calendar, gallery]
+  color: green
+
 - name: "September to Remember"
   description: "With the help of <a href='http://mmcbride1007.github.io/'>Mike Mcbride</a> we built and designed the wedding website for our dear friends Bridget and Kevin. We built the site using simple grunt web app, hosted on one of my node servers"
   link: "http://september2remember.com"
   frontImage: "bkwed.png"
+  tags: [wedding, mobile, gallery]
+  color: purple
 
 - name: "St. Elizabeth, Mother of John the Baptist Parish"
   description: "Parish website for Catholic church in north St. Louis City"
   link: "http://semojb.com"
   frontImage: "semojb.png"
+  tags: [church, wordpress, mobile, calendar]
+  color: red-darker
 
 - name: "St. Cecilia's Parish"
   description: "Parish website for Catholic church in south St. Louis City, featuring translation into Spanish and English"
   link: "http://stceciliaparishstl.org"
   frontImage: "stcecilia.png"
+  tags: [church, wordpress, translation, analytics, mobile, calendar, gallery]
+  color: blue-alt-dark
 
-- name: "Vox Christi"
-  description: "My first site, Vox Christi was a small journal a few of my college classmates and I ran for awhile. We published the works of seminarians from Kenrick-Glennon Seminary, featuring their work both from within and outside the classroom. Each issue was pretty diverse with essays, homilies, poetry, drawings, and pertinent rants."
-  link: "http://voxchristi.com"
-  frontImage: "voxchristi.png"
-
-- name: "501creative"
-  description: "Site rethemeing, implementing CSS3 standards in design and UI. Expanded mobile features and even added plenty of additional animations and usability interactions."
-  link: "http://501creative.com"
-  frontImage: "creative501.png"
-
-- name: "Deaconess Foundation"
-  description: "Total conversion of previous site to responsive, mobile-friendly site. I took particular pleasure in ridding the site of sprite-sheets used for transitioning icons and images, replacing them with pure CSS3 solutions."
-  link: "http://deaconess.org"
-  frontImage: "deaconess.png"
-
-- name: "St. Louis Graduates"
-  description: "Full revamp of the site to make it completely responsive and updating animations with clean CSS techniques"
-  link: "http://stlouisgraduates.org/"
-  frontImageMobile: "stlouisgraduates-mobile.png"
-  frontImage: "stlgraduates.png"
-
-- name: "Pictabuzz"
-  description: "Advertising site for mobile picture/contacts application, created by 501creative"
-  link: "http://pictabuzz.com"
-  frontImage: "pictabuzz.png"
+# - name: "Vox Christi"
+#   description: "My first site, Vox Christi was a small journal a few of my college classmates and I ran for awhile. We published the works of seminarians from Kenrick-Glennon Seminary, featuring their work both from within and outside the classroom. Each issue was pretty diverse with essays, homilies, poetry, drawings, and pertinent rants."
+#   link: "http://voxchristi.com"
+#   frontImage: "voxchristi.png"
+#
+# - name: "501creative"
+#   description: "Site rethemeing, implementing CSS3 standards in design and UI. Expanded mobile features and even added plenty of additional animations and usability interactions."
+#   link: "http://501creative.com"
+#   frontImage: "creative501.png"
+#
+# - name: "Deaconess Foundation"
+#   description: "Total conversion of previous site to responsive, mobile-friendly site. I took particular pleasure in ridding the site of sprite-sheets used for transitioning icons and images, replacing them with pure CSS3 solutions."
+#   link: "http://deaconess.org"
+#   frontImage: "deaconess.png"
+#
+# - name: "St. Louis Graduates"
+#   description: "Full revamp of the site to make it completely responsive and updating animations with clean CSS techniques"
+#   link: "http://stlouisgraduates.org/"
+#   frontImageMobile: "stlouisgraduates-mobile.png"
+#   frontImage: "stlgraduates.png"
+#
+# - name: "Pictabuzz"
+#   description: "Advertising site for mobile picture/contacts application, created by 501creative"
+#   link: "http://pictabuzz.com"
+#   frontImage: "pictabuzz.png"

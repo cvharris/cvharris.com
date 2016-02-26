@@ -1,3 +1,9 @@
+html {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+  color: $text-color;
+}
 /**
  * Reset some basic elements
  */
@@ -8,73 +14,14 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
 body {
     font-family: $sans-serif;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
-
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-}
-
-
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
-}
-
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
-}
-
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-
-
 
 /**
  * Headings
@@ -83,33 +30,45 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-
-
 /**
  * Links
  */
 a {
-    color: $brand-color;
+    color: $focus-color;
     text-decoration: none;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
     &:hover {
-        color: $text-color;
+        color: $blue-alt-darker;
         text-decoration: underline;
     }
 }
 
+/**
+ * Wrapper
+ */
+.wrapper {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
 
+    @include media-query($on-tablet) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
 
 /**
  * Blockquotes
  */
 blockquote {
     color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    border-left: 4px solid $grey-light;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
@@ -120,15 +79,13 @@ blockquote {
     }
 }
 
-
-
 /**
  * Code formatting
  */
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
+    border: 1px solid $grey-light;
     border-radius: 3px;
     background-color: #eef;
 }
@@ -148,29 +105,48 @@ pre {
     }
 }
 
-
-
 /**
- * Wrapper
+ * Set `margin-bottom` to maintain vertical rhythm
  */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
 }
 
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
 
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: .8rem;
+}
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
 
 /**
  * Clearfix
@@ -183,8 +159,6 @@ pre {
         clear: both;
     }
 }
-
-
 
 /**
  * Icons
@@ -201,4 +175,137 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+/**
+ * Background Colors
+ */
+
+.bg-blue-primary {
+  background-color: $blue-primary;
+  color: $white;
+}
+
+.bg-blue-dark {
+  background-color: $blue-dark;
+  color: $white;
+}
+
+.bg-blue-darker {
+  background-color: $blue-darker;
+  color: $white;
+}
+
+.bg-blue-alt {
+  background-color: $blue-alt;
+}
+
+.bg-blue-alt-dark {
+  background-color: $blue-alt-dark;
+  color: $white;
+}
+
+.bg-blue-alt-darker {
+  background-color: $blue-alt-darker;
+  color: $white;
+}
+
+.bg-blue-alt-light {
+  background-color: $blue-alt-light;
+}
+
+.bg-blue-alt-lighter {
+  background-color: $blue-alt-lighter;
+}
+
+.bg-red-color {
+  background-color: $red-color;
+  color: $white;
+}
+
+.bg-red-dark {
+  background-color: $red-dark;
+  color: $white;
+}
+
+.bg-red-darker {
+  background-color: $red-darker;
+  color: $white;
+}
+
+.bg-red-light {
+  background-color: $red-light;
+  color: white;
+}
+
+.bg-red-lighter {
+  background-color: $red-lighter;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-purple {
+  background-color: $purple-color;
+  color: $white;
+}
+
+.bg-green {
+  background-color: $green-color;
+  color: $white;
+}
+
+.bg-green-light {
+  background-color: $green-light;
+  color: $white;
+}
+
+.bg-green-lighter {
+  background-color: $green-lighter;
+  color: $white;
+}
+
+.bg-green-lightest {
+  background-color: $green-lightest;
+}
+
+.bg-gold {
+  background-color: $gold-color;
+  color: $white;
+}
+
+.bg-gold-light {
+  background-color: $gold-light;
+}
+
+.bg-gold-lighter {
+  background-color: $gold-lighter;
+}
+
+.bg-gold-lightest {
+  background-color: $gold-lightest;
+}
+
+.bg-navy-blue {
+  background-color: $navy-blue;
+  color: $white;
+}
+
+.bg-navy-light {
+  background-color: $navy-light;
+  color: $white;
+}
+
+.bg-navy-lighter {
+  background-color: $navy-lighter;
+  color: $white;
+}
+
+.bg-navy-lightest {
+  background-color: $navy-lightest;
+}
+
+.bg-grey-warm {
+  background-color: $grey-warm;
 }

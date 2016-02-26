@@ -8,8 +8,17 @@ backgroundMobile: /assets/header_mobile.png
 classes: home
 ---
 
-<div class="home">
+<div class="home wrapper">
 
+  <article id="hire">
+    <h1 class="hire-title">I'm a Web Developer. Here's how I can help you:</h1>
+    <ul>
+      <li class="marketing">The Internet is large and exciting! Hire a web developer to guide your site through the cosmos!</li>
+      <li class="efficient">Not just a 'pretty face'&mdash;make your website performant, responsive, and an asset, not a liability.</li>
+      <li class="loose">Don't pay for expensive templates or misleading do-it-yourself sites. The best tool on the web is one developer with your full attention.</li>
+      <li class="code">No tricks or shortcuts here. Just pure, smart, scalable code.</li>
+    </ul>
+  </article>
   <div class="floating-icons-container">
     {% for skill in site.data.skills %}
       <div class="floating-icon">
@@ -17,15 +26,6 @@ classes: home
       </div>
     {% endfor %}
   </div>
-
-  <article id="hire">
-    <h1 class="hire-title">Why you would want to hire a contractor for web development:</h1>
-    <ul>
-      <li class="marketing">It's like hiring your own marketing consultant</li>
-      <li class="efficient">A single developer works efficiently using the best tools</li>
-      <li class="loose">Just you and your developer. No sales rep or IT recruiter</li>
-      <li class="code">You can do anything you want, there are no rules</li>
-    </ul>
 <!--     <label>
       Want to ask for a quote?
     </label>
@@ -36,6 +36,5 @@ classes: home
       <button id="submit-inquiry" class="btn" ng-show="(questionaire.mailTo.$valid && questionaire.mailTo.$viewValue != undefined)" ng-click="submitInquiry(questionaire)">Send Inquiry</button>
       <p>Or you can <a href="#/contact">contact me</a> some other way to share your idea with me.</p>
     </div> -->
-  </article>
 
 </div>

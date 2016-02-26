@@ -1,0 +1,36 @@
+---
+layout: page
+title: Portfolio
+permalink: /portfolio/
+order: 1
+icon: fa-briefcase
+description: Some of my current and previous clients
+classes: normal portfolio
+---
+
+<div class="projects-container">
+
+	{% for project in site.data.projects %}
+
+	<div class="portfolio-project bg-{{project.color}}">
+    <a href="{{ project.link }}" target="_blank" class="project-screenshot paper-shadows">
+      <img src="/assets/{{ project.frontImage }}" alt="{{ project.name }}" />
+    </a>
+    <div class="project-card paper-shadows">
+			<h4 class="project-name">{{ project.name }}</h4>
+      <a class="project-link" href="{{ project.link }}" target="_blank">{{ project.link }}</a>
+      <div class="project-tags">
+
+        {% for tag in project.tags %}
+          {% assign tagObj = site.data.tags[tag] %}
+          <span class="project-tag bg-{{ tagObj.color }}"><i class="fa {{ tagObj.icon }}"></i>{{ tagObj.name }}</span>
+        {% endfor %}
+
+      </div>
+      <p class="project-description">{{ project.description }}</p>
+    </div>
+  </div>
+
+	{% endfor %}
+
+</div>

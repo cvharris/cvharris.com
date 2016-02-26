@@ -1,0 +1,84 @@
+---
+drupal:
+  name: Drupal
+  icon: fa-drupal
+  tooltip: "Built using Drupal 7 for the framework"
+  color: blue-alt
+
+wordpress:
+  name: Wordpress
+  icon: fa-wordpress
+  tooltip: "Built using Wordpress for the framework"
+  color: navy-blue
+
+ssl:
+  name: "SSL Secured"
+  icon: fa-expeditedssl
+  tooltip: "Site is secured with SSL and 'https://'"
+  color: green-lightest
+
+github:
+  name: "Github Pages"
+  icon: fa-github-square
+  tooltip: "Hosted on Github Pages using Jekyll for the framework"
+  color: navy-light
+
+mobile:
+  name: "Mobile-Friendly"
+  icon: fa-mobile
+  tooltip: "Site is optimized for all mobile browsers"
+  color: gold-lighter
+
+calendar:
+  name: "Events Calendar"
+  icon: fa-calendar
+  tooltip: "Features events calendars, organized by tags and categories"
+  color: green-lighter
+
+gallery:
+  name: "Photo Gallery"
+  icon: fa-camera
+  tooltip: "Features a photo gallery for users to easily upload and display photos"
+  color: navy-lighter
+
+stripe:
+  name: Stripe
+  icon: fa-cc-stripe
+  tooltip: "Online payments accepted through site using Stripe"
+  color: blue-alt-dark
+
+payments:
+  name: "Online Payments"
+  icon: fa-credit-card-alt
+  tooltip: "Features accepting payments online through the website itself"
+  color: green-light
+
+analytics:
+  name: "Google Analytics"
+  icon: fa-line-chart
+  tooltip: "Features Google Analytics for tracking page views and behavior"
+  color: gold-light
+
+wedding:
+  name: "Wedding"
+  icon: fa-venus-mars
+  tooltip: "Site made just for that special, beautiful day"
+  color: red-light
+
+sports:
+  name: "Sports Team"
+  icon: fa-soccer-ball-o
+  tooltip: "Site made for a sports team or athletics club"
+  color: grey-warm
+
+church:
+  name: "Church/Religious"
+  icon: fa-hand-peace-o
+  tooltip: "Site made for a church or religious community"
+  color: red-lighter
+
+translation:
+  name: "Translations"
+  icon: fa-language
+  tooltip: "Features translations for non-English-speaking visitors"
+  color: navy-light

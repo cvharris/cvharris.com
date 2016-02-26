@@ -3,37 +3,72 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
-$sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
+$sans-serif: "Lato", Helvetica, Arial, sans-serif;
 $serif: "Merriweather", serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
+$base-font-size:   20px;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+// Colors shamelessly taken from the excellent US CIO Web Standards
+// https://playbook.cio.gov/designstandards/visual-style/
+$blue-primary:     #0071bc;
+$blue-dark:        #205493;
+$blue-darker:      #112e51;
 
-$red: 						 #c0392b;
-$blue:						 #2980b9;
-$white:						 #FFFFEB;
-$accent-black:		 #2a3031;
+$blue-alt:         #02bfe7;
+$blue-alt-darker:  #046b99;
+$blue-alt-dark:    #00a6d2;
+$blue-alt-light:   #9bdaf1;
+$blue-alt-lighter: #e1f3f8;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$red-color:        #e31c3d;
+$red-darker:       #981b1e;
+$red-dark:         #cd2026;
+$red-light:        #e59393;
+$red-lighter:      #f9dede;
+
+$black:            #212121;
+$accent-black:     #2a3031;
+$white:            #ffffff;
+$grey-color:       #5b616b;
+$grey-warm:        #e4e2e0;
+$grey-dark:        #323a45;
+$grey-light:       #aeb0b5;
+$grey-lighter:     #d6d7d9;
+$grey-lightest:    #f1f1f1;
+
+$gold-color:       #fdb81e;
+$gold-light:       #f9c642;
+$gold-lighter:     #fad980;
+$gold-lightest:    #fff1d2;
+
+$green-color:      #2e8540;
+$green-light:      #4aa564;
+$green-lighter:    #94bfa2;
+$green-lightest:   #e7f4e4;
+
+$navy-blue:        #205493;
+$navy-light:       #4773aa;
+$navy-lighter:     #8ba6ca;
+$navy-lightest:    #dce4ef;
+
+$blue-focus:       #3e94cf;
+$purple-color:     #4c2c92;
+
+$focus-color:      $blue-focus;
+$visited-color:    $purple-color;
+
+$background-color: $grey-lightest;
+$text-color:       $black;
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    960px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
-$on-desktop:       1100px;
-
+$on-palm:          800px;
+$on-tablet:        1000px;
+$on-desktop:       1280px;
 
 // Using media queries with like this:
 // @include media-query($on-palm) {

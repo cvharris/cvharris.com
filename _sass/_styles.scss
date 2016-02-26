@@ -1,31 +1,3 @@
-html {
-	height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-body {
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-
-.page-content {
-	@include flex-display();
-	@include flex-direction(column);
-	padding:0;
-	height: calc(100% - 61px);
-	overflow-y: auto;
-	overflow-x: hidden;
-	width: 100%;
-	background-color: #fdfdfd;
-
-	@include media-query($on-palm) {
-		-webkit-overflow-scrolling: touch;
-	}
-}
-
 .writing {
 	iframe {
 		display: none;
@@ -44,9 +16,10 @@ body {
 }
 
 .normal .page-head{
-  background: $blue;
+  background: $blue-primary;
   padding: 25px 0;
   @include flex(0, 0, auto);
+  margin-top: 61px;
 
   .page-description {
 	  color: $white;
@@ -58,10 +31,10 @@ body {
   background-position: bottom -15px center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: fixed;
-	top: 0;
+  position: relative;
   width: 100%;
   z-index: 0;
+  margin-top: 61px;
 
 	@include media-query($on-desktop) {
 		background-position: bottom 0 center;
@@ -73,22 +46,22 @@ body {
 }
 
 .page-title {
-  text-shadow: 2px 1px 0 $blue, 5px 4px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 2px 1px 0 $blue-primary, 5px 4px 0 rgba(0, 0, 0, 0.25);
   margin: 0 0 7px;
   color: $white;
   position: relative;
   font-weight: 700;
   font-size: 54pt;
   font-family: $serif;
-  text-indent: -5px;
+  text-indent: 4rem;
   position: relative;
   letter-spacing: 4px;
   line-height: 1.2em;
-  border-bottom: 5px solid $red;
+  border-bottom: 5px solid $red-color;
 
 	i {
 	  position: absolute;
-	  top: 0px;
+	  top: 7px;
 	  left: -65pt;
 	}
 
@@ -114,14 +87,18 @@ body {
 
 .page-description {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  text-indent: 4.3rem;
   line-height: 1.5em;
-  font-weight: 400;
-  font-family: "Lato";
+  font-weight: 100;
   color: rgba(255,255,255,0.8);
 }
 
 @include media-query($on-palm) {
+  .page-description {
+    text-indent: 0;
+  }
+
 	.home .page-description {
 		text-align: center;
 	}
@@ -142,11 +119,6 @@ body {
 	}
 }
 
-.home #main {
-  padding-top: calc(100vh - 165px);
-}
-
-
 .floating-icons-container {
 	@include flex-display();
 	@include align-items(center);
@@ -161,7 +133,7 @@ body {
 
 #hire {
 	position: relative;
-  background: $blue;
+  background: $blue-primary;
   padding: 50px 20px;
   font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
 
@@ -170,12 +142,11 @@ body {
 	  color: $white;
 	  position: relative;
 	  font-weight: 700;
-	  font-size: 22pt;
-	  font-family: "lato";
+	  font-size: 1.4rem;
 	  position: relative;
 	  padding: 0 0 10px;
 	  line-height: 1.2em;
-	  border-bottom: 3px solid $red;
+	  border-bottom: 3px solid $red-color;
   }
 
   &:before {
@@ -183,7 +154,7 @@ body {
     position: absolute;
     width: 300%;
     height: 100%;
-    background: $blue;
+    background: $blue-primary;
     display: block;
     top: 0;
     left: -100%;
@@ -199,10 +170,10 @@ body {
     @include justify-content(flex-start);
 
   	li {
-		  font-size: 14pt;
+		  font-size: 1rem;
 		  color: $white;
-		  line-height: 1em;
-		  margin: 12px 0;
+		  line-height: 1.4rem;
+		  margin: 1rem 0;
 		  font-weight: 300;
 		  position: relative;
 
@@ -211,6 +182,8 @@ body {
         position: absolute;
         font-family: FontAwesome;
         left: -30px;
+        top: 50%;
+        margin-top: -12px;
       }
       &.marketing:before {
         content: '\f0fb';
@@ -284,7 +257,7 @@ body {
     content: '';
     display: block;
     border-radius: inherit;
-    box-shadow: inset 0 0 0 30px $blue;
+    box-shadow: inset 0 0 0 30px $blue-primary;
     position: absolute;
     height: 100%;
     top: 0;
@@ -298,14 +271,38 @@ body {
  	}
 
  	&:hover {
-    color: $blue !important;
+    color: $blue-primary !important;
 
     &:before {
 	    -webkit-transform: scale3d(1.05, 1.05, 1.05);
 	    transform: scale3d(1.05, 1.05, 1.05);
-	    box-shadow: inset 0 0 0 2px $blue;
+	    box-shadow: inset 0 0 0 2px $blue-primary;
     }
  	}
+}
+
+.paper-shadows {
+  position: relative;
+  z-index: 2;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &:before {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &:after {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  }
 }
 
 /* Portfolio */
@@ -316,132 +313,123 @@ body {
 }
 
 .portfolio-project {
-  -webkit-perspective: 1000;
-  height: 250px;
-  width: 350px;
-  margin: 20px 10px 0;
+  width: calc(100% - 4rem);
   position: relative;
-  float: left;
-  border-radius: 6px;
-	cursor: pointer;
+  @include flex-display();
+  @include justify-content(flex-start);
+  padding: 2rem;
+  overflow: hidden;
+
+  .project-screenshot {
+    height: 400px;
+    margin: 0 1rem 0 0;
+    @include flex(0, 0, 40%);
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }
 
 	.project-card {
-		-webkit-transition: 0.6s;
-    transition: 0.6s;
-		-webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 6px;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
-
-		.front, .back {
-			-webkit-backface-visibility: hidden;
-	    backface-visibility: hidden;
-	    position: absolute;
-	    top: 0;
-	    left: 0;
-	    width: 100%;
-	    height: 250px;
-	    overflow: auto;
-			-webkit-transition: 0.6s;
-			transition: 0.6s;
-			-webkit-transform-style: preserve-3d;
-			transform-style: preserve-3d;
-
-		}
-		.front {
-		  background-size: cover;
-		  background-repeat: no-repeat;
-	    z-index: 2;
-	    /* for firefox 31 */
-	  	-webkit-transform: rotateY(0deg);
-	    transform: rotateY(0deg);
-	    background-color: white;
-	    background-size: auto 100%;
-	    background-position: center;
-			@include flex-display();
-		  @include align-items(flex-end);
-			overflow: hidden;
-
-			&:before {
-		    content: '';
-		    position: absolute;
-		    display: block;
-				z-index: 1;
-		    height: 1000px;
-		    width: 1000px;
-		    left: 50%;
-		    top: 50%;
-		    margin-left: -500px;
-		    margin-top: -500px;
-		    border-radius: 100%;
-		    box-shadow: inset 0 0 40px 500px rgba(36, 36, 36, 0.7);
-		    transition: box-shadow .3s ease;
-			}
-			@include media-query($on-palm) {
-				@include align-items(flex-start);
-
-				&:before {
-					content: none;
-				}
-				.project-name {
-					text-shadow: 1px 1px #333, -1px -1px #333, 1px -1px #333, -1px 1px #333;
-				}
-			}
-		}
-		.back {
-	  	-webkit-transform: rotateY(-180deg);
-	    transform: rotateY(-180deg);
-	    background-color: white;
-	    background-image: none;
-
-			div {
-		    padding: 10px 20px;
-			}
-
-			h2 {
-		    color: black;
-		    padding: 10px 20px;
-			}
-		}
-
-		.project-name {
-			font-size: 27px;
-			margin: 0;
-			color: white;
-			padding-left: 10px;
-			padding-bottom: 5px;
-			z-index: 2;
-			text-shadow: 0;
-		  transition: text-shadow .3s ease;
-		}
+    @include flex(0, 0, 51%);
+    margin: 0 0 0 1rem;
+    background: $white;
+    color: $text-color;
+    padding: 1rem 1.5rem;
+    text-align: right;
 	}
 
-	&:hover {
-		.project-card {
-			.front:before {
-		    box-shadow: inset 0 0 40px 300px rgba(36, 36, 36, 0.4);
-			}
-			.front .project-name {
-				text-shadow: 1px 1px #333, -1px -1px #333, 1px -1px #333, -1px 1px #333;
-			}
-		}
+	.project-name {
+		font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 1.4rem;
+    margin-bottom: 0.2rem;
 	}
 
-	&.flipped .project-card {
-	  -webkit-transform: rotateY(180deg);
-	  transform: rotateY(180deg);
-	}
+  .project-link {
+    padding-bottom: 0.2rem;
+    display: block;
+  }
 
-	&.featured {
-    height: 520px;
+  &:nth-child(even) {
+    @include flex-flow(row-reverse);
+    @include justify-content(flex-end);
 
-    .front {
-    	height: 520px;
+    .project-screenshot {
+      margin: 0 0 0 1rem;
     }
-	}
+
+    .project-card {
+      margin: 0 1rem 0 0;
+      text-align: left;
+    }
+  }
+
+  &:nth-child(odd) {
+
+    .project-tags {
+      @include flex-display();
+      @include flex-wrap(wrap);
+      @include flex-direction(row-reverse);
+
+      .project-tag {
+        @include flex-flow(row-reverse);
+        margin-bottom: 0.4rem;
+
+        i {
+          padding-left: 3px;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  @include media-query($on-palm) {
+
+    &:nth-child(odd), &:nth-child(even) {
+      width: calc(100% - 2rem);
+      padding: 1rem;
+      @include flex-flow(column);
+
+      .project-screenshot {
+        height: 200px;
+        margin: 0;
+      }
+
+      .project-card {
+        margin: 0;
+        text-align: left;
+        padding: 1rem;
+      }
+
+      .project-name {
+        font-weight: 700;
+      }
+
+
+
+      .project-tags {
+        @include flex-flow(row, wrap);
+      }
+    }
+  }
+}
+
+.project-tag {
+  margin-right: 0.4rem;
+  padding: 0 5px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  @include flex-display(inline-flex);
+  @include align-items(center);
+
+  i {
+    padding-right: 3px;
+  }
 }
 
 .site-nav {
@@ -465,6 +453,7 @@ body {
 		i {
 	    position: absolute;
 	    left: 20px;
+      top: 5px;
 	    font-size: 20px;
 	    line-height: 22px;
 	    -webkit-transform: translate3d(-40px, 2.5em, 0);
