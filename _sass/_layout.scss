@@ -14,7 +14,7 @@ body {
     z-index: 9;
     opacity: 0;
     background: rgba($black, .85);
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
     transition-duration: 0.5s;
     transition-property: opacity, transform, width;
     -webkit-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
@@ -83,7 +83,7 @@ main {
   background-color: $white;
   top: 56px;
   z-index: 8;
-  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   -webkit-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
@@ -104,8 +104,8 @@ aside {
   overflow-y: scroll;
   visibility: hidden;
   opacity: 1;
-  -webkit-transform: translateX(250px);
-  transform: translateX(250px);
+  -webkit-transform: translate3d(250px, 0, 0);
+  transform: translate3d(250px, 0, 0);
   transition: all 0.5s;
   -webkit-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
    -moz-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
@@ -144,19 +144,19 @@ body {
        -moz-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
          -o-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
             transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
     }
 
     main {
-      -webkit-transform: translateX(-250px);
-      transform: translateX(-250px);
+      -webkit-transform: translate3d(-250px, 0, 0);
+      transform: translate3d(-250px, 0, 0);
     }
 
     &:after {
       width: calc(100% - 250px);
       opacity: 1;
-      transform: translateX(-250px);
+      transform: translate3d(-250px, 0, 0);
       transition-duration: 0.5s;
       transition-property: opacity, width, transform;
       -webkit-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);

@@ -25,9 +25,9 @@
 
 - name: "PHP"
   description: "A server-side language useful for getting data to websites out of databases"
-  img: "php.png"
+  img: "php.jpg"
 
-- name: "jQuery" 
+- name: "jQuery"
   description: "Most popular Javascript library to manipulate and animate web pages"
   img: "jquery.png"
 
@@ -49,7 +49,7 @@
 
 - name: "Apache"
   description: "The easiest and standard web-hosting server, best for just about any website"
-  img: "apache.png"
+  img: "apache.jpg"
 
 - name: "NodeJS"
   description: "The most popular Javascript server-side tool, best for running web applications"
@@ -64,5 +64,5 @@
   img: "couchdb.png"
 
 - name: "Firebase"
-  description: "A NoSQL database which opens web sockets for real-time updates and data transfers" 
+  description: "A NoSQL database which opens web sockets for real-time updates and data transfers"
   img: "firebase.png"
