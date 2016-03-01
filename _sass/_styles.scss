@@ -383,6 +383,7 @@
 
   @include media-query($on-palm) {
     &:nth-child(odd), &:nth-child(even) {
+      display: block;
       width: 100%;
       padding: 1rem;
       @include flex-flow(column);
