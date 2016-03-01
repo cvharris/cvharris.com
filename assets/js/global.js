@@ -9,7 +9,7 @@
         body.addClass('sidebar');
       }
     });
-    
+
     $('main').click(function() {
       if (body.hasClass('sidebar')) {
         body.removeClass('sidebar');

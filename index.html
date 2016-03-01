@@ -8,18 +8,19 @@ backgroundMobile: /assets/header_mobile.png
 classes: home
 ---
 
-<div class="home wrapper">
-
+<div class="home">
   <article id="hire">
-    <h1 class="hire-title">I'm a Web Developer. Here's how I can help you:</h1>
-    <ul>
-      <li class="marketing">The Internet is large and exciting! Hire a web developer to guide your site through the cosmos!</li>
-      <li class="efficient">Not just a 'pretty face'&mdash;make your website performant, responsive, and an asset, not a liability.</li>
-      <li class="loose">Don't pay for expensive templates or misleading do-it-yourself sites. The best tool on the web is one developer with your full attention.</li>
-      <li class="code">No tricks or shortcuts here. Just pure, smart, scalable code.</li>
-    </ul>
+    <div class="wrapper">
+      <h1 class="hire-title">I'm a Web Developer. Here's how I can help you:</h1>
+      <ul>
+        <li class="marketing">The Internet is large and exciting! Hire a web developer to guide your site through the cosmos!</li>
+        <li class="efficient">Not just a 'pretty face'&mdash;make your website performant, responsive, and an asset, not a liability.</li>
+        <li class="loose">Don't pay for expensive templates or misleading do-it-yourself sites. The best tool on the web is one developer with your full attention.</li>
+        <li class="code">No tricks or shortcuts here. Just pure, smart, scalable code.</li>
+      </ul>
+    </div>
   </article>
-  <div class="floating-icons-container">
+  <div class="floating-icons-container wrapper">
     {% for skill in site.data.skills %}
       <div class="floating-icon">
         <img src="/assets/{{skill.img}}" />
